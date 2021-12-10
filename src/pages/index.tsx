@@ -7,10 +7,10 @@ import styles from '../styles/Home.module.css';
 
 const Home: NextPage = () => {
   return (
-    <div className={styles.container}>
+    <div className="py-0 px-8">
       <Seo />
 
-      <main className={styles.main}>
+      <main className="min-h-screen py-8 px-0 flex-1 flex-col justify-center items-center">
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
