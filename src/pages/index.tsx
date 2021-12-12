@@ -10,7 +10,7 @@ const Home: NextPage = () => {
     <div className="py-0 px-8">
       <Seo />
 
-      <main className="min-h-screen py-8 px-0 flex-1 flex-col justify-center items-center">
+      <main className="min-h-screen py-8 px-0 flex-1 flex flex-col justify-center items-center">
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
