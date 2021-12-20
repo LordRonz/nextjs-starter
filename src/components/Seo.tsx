@@ -3,9 +3,9 @@ import { useRouter } from 'next/router';
 
 const defaultMeta = {
   title: 'NextJS Typescript Boilerplate',
-  siteName: 'lordronz.github.io',
+  siteName: process.env.NEXT_PUBLIC_HOSTNAME || 'lordronz.github.io',
   description: 'NextJS Typescript Boilerplate.',
-  url: 'https://lordronz.github.io',
+  url: `https://${process.env.NEXT_PUBLIC_HOSTNAME}` || 'https://lordronz.github.io',
   image: '/vercel.svg',
   type: 'website',
   robots: 'follow, index',
