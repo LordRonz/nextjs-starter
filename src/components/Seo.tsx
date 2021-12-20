@@ -5,7 +5,7 @@ const defaultMeta = {
   title: 'NextJS Typescript Boilerplate',
   siteName: process.env.NEXT_PUBLIC_HOSTNAME || 'lordronz.github.io',
   description: 'NextJS Typescript Boilerplate.',
-  url: `https://${process.env.NEXT_PUBLIC_HOSTNAME}` || 'https://lordronz.github.io',
+  url: process.env.NEXT_PUBLIC_HOSTNAME ? `https://${process.env.NEXT_PUBLIC_HOSTNAME}` : 'https://lordronz.github.io',
   image: '/vercel.svg',
   type: 'website',
   robots: 'follow, index',
