@@ -1,3 +1,5 @@
+![[nextjs-template]](https://socialify.git.ci/LordRonz/nextjs-boilerplate/image?description=1&font=Source%20Code%20Pro&forks=1&issues=1&language=1&name=1&owner=1&pattern=Circuit%20Board&pulls=1&stargazers=1&theme=Dark)
+
 [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/github/LordRonz/nextjs-boilerplate.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/LordRonz/nextjs-boilerplate/context:javascript)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
