@@ -1,63 +1,47 @@
 /* eslint-disable @next/next/no-img-element */
 import type { NextPage } from 'next';
 
+import ButtonLink from '@/components/links/ButtonLink';
+import CustomLink from '@/components/links/CustomLink';
+import UnstyledLink from '@/components/links/UnstyledLink';
 import Seo from '@/components/Seo';
-
-import styles from '../styles/Home.module.css';
 
 const Home: NextPage = () => {
   return (
-    <div className='py-0 px-8'>
+    <>
       <Seo />
+      <main>
+        <section className='bg-black text-primary-50'>
+          <div className='layout flex flex-col justify-center items-center min-h-screen text-center'>
+            <h1>Next.js + Tailwind CSS + TypeScript Starter</h1>
+            <p className='mt-2 text-sm text-primary-50'>
+              This starter is heavily inspired by{' '}
+              <CustomLink href='https://github.com/theodorusclarence/ts-nextjs-tailwind-starter'>
+                this amazing starter
+              </CustomLink>
+              . I changed some stuff to fit my preference.
+            </p>
+            <p className='mt-2 text-md text-primary-50'>
+              <CustomLink href='https://github.com/LordRonz/nextjs-starter'>See the repository</CustomLink>
+            </p>
 
-      <main className='min-h-screen py-8 px-0 flex-1 flex flex-col justify-center items-center'>
-        <h1 className={styles.title}>
-          Welcome to <a href='https://nextjs.org'>Next.js!</a>
-        </h1>
+            <ButtonLink className='mt-6' href='#' variant='primary'>
+              Work In Progress
+            </ButtonLink>
 
-        <p className={styles.description}>
-          Get started by editing <code className={styles.code}>pages/index.tsx</code>
-        </p>
+            <UnstyledLink
+              href='https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2FLordRonz%2Fnextjs-starter'
+              className='mt-4'
+            >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img width='92' height='32' src='https://vercel.com/button' alt='Deploy with Vercel' />
+            </UnstyledLink>
 
-        <div className={styles.grid}>
-          <a href='https://nextjs.org/docs' className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href='https://nextjs.org/learn' className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a href='https://github.com/vercel/next.js/tree/master/examples' className={styles.card}>
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href='https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app'
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>Instantly deploy your Next.js site to a public URL with Vercel.</p>
-          </a>
-        </div>
+            <footer className='absolute bottom-2'>© Aaron Christopher {new Date().getFullYear()}</footer>
+          </div>
+        </section>
       </main>
-
-      <footer className={styles.footer}>
-        <a
-          href='https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <img src='/vercel.svg' alt='Vercel Logo' width={72} height={16} />
-          </span>
-        </a>
-      </footer>
-    </div>
+    </>
   );
 };
 
