@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import type { NextPage } from 'next';
 
+import ArrowLink from '@/components/links/ArrowLink';
 import ButtonLink from '@/components/links/ButtonLink';
 import CustomLink from '@/components/links/CustomLink';
 import UnstyledLink from '@/components/links/UnstyledLink';
@@ -22,7 +23,7 @@ const Home: NextPage = () => {
               . I changed some stuff to fit my preference.
             </p>
             <p className='mt-2 text-md text-primary-50'>
-              <CustomLink href='https://github.com/LordRonz/nextjs-starter'>See the repository</CustomLink>
+              <ArrowLink href='https://github.com/LordRonz/nextjs-starter'>See the repository</ArrowLink>
             </p>
 
             <ButtonLink className='mt-6' href='#' variant='primary'>
