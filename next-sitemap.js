@@ -1,6 +1,10 @@
-// !STARTERCONF Change the siteUrl
+/**
+ * @type {import('next-sitemap').IConfig}
+ * @see https://github.com/iamvishnusankar/next-sitemap#readme
+ */
 module.exports = {
-  siteUrl: 'https://ronz-nextjs.vercel.app/',
+  // !STARTERCONF Change the siteUrl without additional '/' on the end
+  siteUrl: 'https://ronz-nextjs.vercel.app',
   generateRobotsTxt: true,
   robotsTxtOptions: {
     policies: [{ userAgent: '*', allow: '/' }],
