@@ -10,7 +10,7 @@
     "lint": "next lint",
     "lint:fix": "eslint src --fix && yarn format",
     "lint:strict": "eslint --max-warnings=0 src",
-    "tsc": "tsc --pretty --noEmit",
+    "tsc": "tsc --pretty --noEmit --incremental false",
     "format": "prettier -w .",
     "format:check": "prettier -c .",
     "prepare": "husky install"
