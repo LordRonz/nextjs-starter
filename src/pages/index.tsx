@@ -26,8 +26,8 @@ const Home: NextPage = () => {
               <ArrowLink href='https://github.com/LordRonz/nextjs-starter'>See the repository</ArrowLink>
             </p>
 
-            <ButtonLink className='mt-6' href='#' variant='primary'>
-              Work In Progress
+            <ButtonLink className='mt-6' href='/components' variant='primary'>
+              Components
             </ButtonLink>
 
             <UnstyledLink
