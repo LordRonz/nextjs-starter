@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import type { NextPage } from 'next';
 
+import Button from '@/components/buttons/Button';
 import ArrowLink from '@/components/links/ArrowLink';
 import ButtonLink from '@/components/links/ButtonLink';
 import CustomLink from '@/components/links/CustomLink';
@@ -10,36 +11,50 @@ import Seo from '@/components/Seo';
 const Home: NextPage = () => {
   return (
     <>
-      <Seo />
+      <Seo templateTitle='Components' description='Component collections' />
       <main>
         <section className='bg-black text-primary-50'>
-          <div className='layout flex flex-col justify-center items-center min-h-screen text-center'>
-            <h1>Next.js + Tailwind CSS + TypeScript Starter</h1>
-            <p className='mt-2 text-sm text-primary-50'>
-              This starter is heavily inspired by{' '}
-              <CustomLink href='https://github.com/theodorusclarence/ts-nextjs-tailwind-starter'>
-                this amazing starter
-              </CustomLink>
-              . I changed some stuff to fit my preference.
+          <div className='layout flex flex-col min-h-screen'>
+            <h1 className='mt-10 mb-4'>Components</h1>
+            <p className='mb-4'>
+              <ArrowLink href='/' openNewTab={false} direction='left'>
+                Back To Home
+              </ArrowLink>
             </p>
-            <p className='mt-2 text-md text-primary-50'>
-              <ArrowLink href='https://github.com/LordRonz/nextjs-starter'>See the repository</ArrowLink>
-            </p>
-
-            <ButtonLink className='mt-6' href='#' variant='primary'>
-              Work In Progress
-            </ButtonLink>
-
-            <UnstyledLink
-              href='https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2FLordRonz%2Fnextjs-starter'
-              className='mt-4'
-            >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img width='92' height='32' src='https://vercel.com/button' alt='Deploy with Vercel' />
-            </UnstyledLink>
-
-            <footer className='absolute bottom-2'>© Aaron Christopher {new Date().getFullYear()}</footer>
+            <ol className='space-y-10'>
+              <li>
+                <h2 className='my-4'>Buttons</h2>
+                <Button variant='primary' className='mr-4'>
+                  Button
+                </Button>
+                <Button variant='outline'>Button Outline</Button>
+              </li>
+              <li>
+                <h2 className='my-4'>Links</h2>
+                <ArrowLink variant='primary' href='#'>
+                  ArrowLink
+                </ArrowLink>
+              </li>
+              <li>
+                <ButtonLink variant='primary' href='#'>
+                  ButtonLink
+                </ButtonLink>
+              </li>
+              <li>
+                <CustomLink href='#'>CustomLink</CustomLink>
+              </li>
+              <li>
+                <UnstyledLink href='#'>UnstyledLink</UnstyledLink>
+              </li>
+              <li>
+                <h2 className='my-4'>404 Page</h2>
+                <ArrowLink variant='primary' href='/404'>
+                  ArrowLink
+                </ArrowLink>
+              </li>
+            </ol>
           </div>
+          <footer className='py-4 flex justify-center items-center'>© Aaron Christopher {new Date().getFullYear()}</footer>
         </section>
       </main>
     </>
