@@ -22,23 +22,83 @@ const Home: NextPage = () => {
               </ArrowLink>
             </p>
             <ol className='space-y-10'>
-              <li>
+              <li className='space-y-4'>
                 <h2 className='my-4'>Buttons</h2>
-                <Button variant='primary' className='mr-4'>
-                  Button
-                </Button>
-                <Button variant='outline'>Button Outline</Button>
+                <div className='space-x-4'>
+                  <Button variant='primary'>Button</Button>
+                  <Button variant='outline'>Button Outline</Button>
+                  <Button variant='ghost'>Button Ghost</Button>
+                  <Button variant='light'>Button Light</Button>
+                  <Button variant='dark'>Button Dark</Button>
+                </div>
+                <div className='space-x-4'>
+                  <Button variant='primary' disabled>
+                    Disabled
+                  </Button>
+                  <Button variant='outline' disabled>
+                    Disabled
+                  </Button>
+                  <Button variant='ghost' disabled>
+                    Disabled
+                  </Button>
+                  <Button variant='light' disabled>
+                    Disabled
+                  </Button>
+                  <Button variant='dark' disabled>
+                    Disabled
+                  </Button>
+                </div>
+                <div className='space-x-4'>
+                  <Button variant='primary' isLoading>
+                    Disabled
+                  </Button>
+                  <Button variant='outline' isLoading>
+                    Disabled
+                  </Button>
+                  <Button variant='ghost' isLoading>
+                    Disabled
+                  </Button>
+                  <Button variant='light' isLoading>
+                    Disabled
+                  </Button>
+                  <Button variant='dark' isLoading>
+                    Disabled
+                  </Button>
+                </div>
               </li>
               <li>
                 <h2 className='my-4'>Links</h2>
-                <ArrowLink variant='primary' href='#'>
-                  ArrowLink
-                </ArrowLink>
+                <div className='space-x-8'>
+                  <ArrowLink href='#'>ArrowLink</ArrowLink>
+                  <ArrowLink direction='left' href='#'>
+                    ArrowLink
+                  </ArrowLink>
+                  <ArrowLink as={UnstyledLink} className='inline-flex items-center' href='#'>
+                    ArrowLink
+                  </ArrowLink>
+                  <ArrowLink href='#' as={ButtonLink}>
+                    ArrowLink
+                  </ArrowLink>
+                </div>
               </li>
               <li>
-                <ButtonLink variant='primary' href='#'>
-                  ButtonLink
-                </ButtonLink>
+                <div className='space-x-4'>
+                  <ButtonLink variant='primary' href='#'>
+                    ButtonLink
+                  </ButtonLink>
+                  <ButtonLink variant='outline' href='#'>
+                    ButtonLink outline
+                  </ButtonLink>
+                  <ButtonLink variant='ghost' href='#'>
+                    ButtonLink ghost
+                  </ButtonLink>
+                  <ButtonLink variant='light' href='#'>
+                    ButtonLink light
+                  </ButtonLink>
+                  <ButtonLink variant='dark' href='#'>
+                    ButtonLink dark
+                  </ButtonLink>
+                </div>
               </li>
               <li>
                 <CustomLink href='#'>CustomLink</CustomLink>
@@ -48,9 +108,7 @@ const Home: NextPage = () => {
               </li>
               <li>
                 <h2 className='my-4'>404 Page</h2>
-                <ArrowLink variant='primary' href='/404'>
-                  ArrowLink
-                </ArrowLink>
+                <ArrowLink href='/404'>Go there</ArrowLink>
               </li>
             </ol>
           </div>
