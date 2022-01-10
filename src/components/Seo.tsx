@@ -14,7 +14,7 @@ const defaultMeta = {
   googlebot: 'follow, index',
 };
 
-type SeoProps = {
+export type SeoProps = {
   date?: string;
   templateTitle?: string;
 } & Partial<typeof defaultMeta>;
@@ -63,19 +63,19 @@ const Seo = (props: SeoProps) => {
   );
 };
 
-type Favicons = {
-  rel: string;
-  href: string;
-  sizes?: string;
-  type?: string;
+export type Favicons = {
+  readonly rel: string;
+  readonly href: string;
+  readonly sizes?: string;
+  readonly type?: string;
 };
 
-const favicons: Array<Favicons> = [
+const favicons: readonly Favicons[] = [
   {
     rel: 'icon',
     type: 'image/x-icon',
     href: '/favicon.ico',
   },
-];
+] as const;
 
 export default Seo;
