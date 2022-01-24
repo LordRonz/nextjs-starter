@@ -5,6 +5,7 @@
 ![Lines of code](https://img.shields.io/tokei/lines/github/lordronz/nextjs-starter)
 [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/github/LordRonz/nextjs-starter.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/LordRonz/nextjs-starter/context:javascript)
 ![vercel status](https://img.shields.io/github/deployments/lordronz/nextjs-starter/production?logo=vercel&label=vercel)
+[![Depfu](https://badges.depfu.com/badges/69ce5314c9854454048e94ee1db61a73/count.svg)](https://depfu.com/github/LordRonz/nextjs-starter?project_id=33102)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
