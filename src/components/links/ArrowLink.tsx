@@ -24,7 +24,7 @@ const ArrowLink = <C extends React.ElementType>({
       {...rest}
       className={clsx(
         className,
-        'gap-[0.25em] group',
+        'group gap-[0.25em]',
         direction === 'left' && 'flex-row-reverse'
       )}
     >
@@ -52,9 +52,9 @@ const ArrowLink = <C extends React.ElementType>({
           strokeWidth='1.5'
           strokeLinecap='round'
           className={clsx(
-            'transition-all duration-200 origin-left',
+            'origin-left transition-all duration-200',
             'opacity-0 motion-safe:-translate-x-1',
-            'group-hover:opacity-100 group-hover:translate-x-0'
+            'group-hover:translate-x-0 group-hover:opacity-100'
           )}
         />
       </svg>
