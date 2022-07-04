@@ -17,7 +17,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "clsx": "^1.1.1",
+    "clsx": "^1.2.0",
     "next": "12.1.6",
     "next-themes": "^0.2.0",
     "preact": "^10.7.3",
