@@ -1,6 +1,8 @@
 import clsx from 'clsx';
 import { ImSpinner2 } from 'react-icons/im';
 
+import clsxm from '@/lib/clsxm';
+
 const enum ButtonVariant {
   primary,
   outline,
@@ -29,8 +31,7 @@ const Button = ({
     <button
       type='button'
       disabled={disabled}
-      className={clsx(
-        className,
+      className={clsxm(
         'inline-flex items-center rounded px-4 py-2 font-semibold',
         'focus:outline-none focus-visible:ring focus-visible:ring-primary-500',
         'shadow-sm',
@@ -73,7 +74,8 @@ const Button = ({
         ],
         'disabled:cursor-not-allowed',
         isLoading &&
-          'relative !cursor-wait !text-transparent !transition-none hover:!text-transparent'
+          'relative !cursor-wait !text-transparent !transition-none hover:!text-transparent',
+        className
       )}
       {...rest}
     >
