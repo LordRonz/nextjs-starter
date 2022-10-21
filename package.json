@@ -24,7 +24,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.4.0",
-    "tailwind-merge": "^1.6.1"
+    "tailwind-merge": "^1.7.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
